@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3de558cb-522d-4341-bb9f-938b56edb145" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/HelloController.java" afterDir="false" />
-    </list>
+    <list default="true" id="3de558cb-522d-4341-bb9f-938b56edb145" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,6 +157,7 @@
       <workItem from="1651309930256" duration="1160000" />
       <workItem from="1651321953114" duration="5886000" />
       <workItem from="1651377248090" duration="6741000" />
+      <workItem from="1651384388466" duration="11000" />
     </task>
     <servers />
   </component>
