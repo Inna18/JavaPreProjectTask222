@@ -15,29 +15,13 @@ public class CarDaoImpl implements CarDao {
         List<Car> carsList = new ArrayList<>();
         List<Car> carsList2 = Car.cars();
 
-        if (count == 1) {
-            carsList.add(carsList2.get(0));
-            return carsList;
-        } else if (count == 2) {
-            carsList.add(carsList2.get(0));
-            carsList.add(carsList2.get(1));
-            return carsList;
-        } else if (count == 3) {
-            carsList.add(carsList2.get(0));
-            carsList.add(carsList2.get(1));
-            carsList.add(carsList2.get(2));
-            return carsList;
-        } else if (count == 4) {
-            carsList.add(carsList2.get(0));
-            carsList.add(carsList2.get(1));
-            carsList.add(carsList2.get(2));
-            carsList.add(carsList2.get(3));
-            return carsList;
-        } else if (count >= 5 || count == 0) {
+        if (count == 0 || count >= 5) {
             carsList = carsList2;
-            return carsList;
         } else {
-            return null;
+            for (int i = 0; i < count; i++) {
+                carsList.add(carsList2.get(i));
+            }
         }
+        return carsList;
     }
 }
