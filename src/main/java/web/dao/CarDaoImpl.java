@@ -5,6 +5,7 @@ import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class CarDaoImpl implements CarDao {
@@ -12,16 +13,13 @@ public class CarDaoImpl implements CarDao {
     @Override
     public List<Car> returnCars(int count) {
 
-        List<Car> carsList = new ArrayList<>();
-        List<Car> carsList2 = Car.cars();
+        List<Car> cars = new ArrayList<>();
+        cars.add(new Car("BMW", "X1", "Germany"));
+        cars.add(new Car("Audi", "A4", "Germany"));
+        cars.add(new Car("Toyota", "Prius", "Japan"));
+        cars.add(new Car("Kia", "Sportage", "South Korea"));
+        cars.add(new Car("Volvo", "XC90", "Sweden"));
 
-        if (count == 0 || count >= 5) {
-            carsList = carsList2;
-        } else {
-            for (int i = 0; i < count; i++) {
-                carsList.add(carsList2.get(i));
-            }
-        }
-        return carsList;
+        return cars.stream().limit(count).collect(Collectors.toList());
     }
 }

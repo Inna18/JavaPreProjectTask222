@@ -18,7 +18,7 @@ public class CarController {
     @Autowired
     private CarService carService;
 
-    @GetMapping("")
+    @GetMapping
     public String getCars(@RequestParam(value = "count", required = false, defaultValue = "5") int count, Model model) {
         List<Car> cars = carService.returnCars(count);
         model.addAttribute("cars", cars);
